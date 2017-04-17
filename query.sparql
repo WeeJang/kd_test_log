@@ -1,0 +1,12 @@
+    "select ?stu_name ?tec_name ?p_tec_name ?pp_tec_name where { \
+ 		   ?stu_id <commlab://student.type> master .  \
+ 		   ?stu_id <commlab://person.name> ?stu_name .  \
+ 		   ?stu_id <commlab://study.follow> ?tec_id .  \
+ 		   ?tec_id <commlab://person.name> ?tec_name .  \
+ 		   ?tec_id <commlab://study.follow> ?p_tec_id .  \
+ 		   ?p_tec_id <commlab://person.name> ?p_tec_name .  \
+ 		   ?p_tec_id <commlab://study.follow> ?pp_tec_id .  \
+ 		   ?pp_tec_id <commlab://person.name> \"Doc.X\" .  \
+        }";
+
+
